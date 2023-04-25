@@ -386,8 +386,8 @@ div#proyects_section div.widget.Image{
 
 div#proyects_section .Image{
 	position: relative;
-	width: 800px;
-    height: 350px;
+	width: 100%;
+    	height: 350px;
 	overflow: hidden;
 }
 
