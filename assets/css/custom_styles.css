@@ -688,7 +688,10 @@ div#page_body .post div.entry-content:first-child{
 }
 
 #footer div#Attribution1{
-	width: 100%;
+	width: 100%;.
+	padding: 0 1em;
+	box-sizing: border-box;
+	font-size: 0.9em;
 }
 
 
