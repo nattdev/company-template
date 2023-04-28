@@ -808,11 +808,6 @@ div#testimonials_section .Image{
 --x-large: 48px;
 }
 
-	.margin-top{
-	margin-top: 20px;
-}
-
-
 #Text5 h3::after, #Text7 h3::after, #Text2 h3::after, #Text11 h3::after, div#ContactForm1 h3::after, .post-outer-container.single-item h3::after, div#additem_section .Text:first-child h3::after{
 bottom: 29px;
 }
