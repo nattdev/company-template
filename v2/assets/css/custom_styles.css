@@ -750,6 +750,7 @@ div#Image1 {
 		border: 2px solid #ffffff22;
 		border-top: 0;
 		flex-grow: 1;
+		border-bottom: 0;
 	}
 
 	div#LinkList1 ul li:hover{
