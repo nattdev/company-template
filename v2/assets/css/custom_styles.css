@@ -564,8 +564,13 @@ div#form_section .Text div{
 
 .contact-form-success-message-with-border {
 	color: #fff;
-	background: var(--main-bg-color);
+	background: var(--secondary-color);
 }
+
+#form_section svg {
+	fill: 
+}
+
 
 /***FOOTER_LIST***/
 #footer_list {
