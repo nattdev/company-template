@@ -270,7 +270,7 @@ div#services_section .Text div, div#additem_section .Text div {
 }
 
 
-div#services_section div.Text:nth-child(2), div#additem_section div.Text:nth-child(3){
+div#services_section div.Text:nth-child(2n){
     background: var(--secondary-color);
 }
 
