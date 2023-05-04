@@ -127,6 +127,7 @@ div#LinkList1 ul{
 div#LinkList1 ul li{
 	padding: 5px;
 	margin: 0 10px;
+	min-width: fit-content;
 }
 
 
@@ -568,7 +569,7 @@ div#form_section .Text div{
 }
 
 #form_section svg {
-	fill: 
+	fill: var(--secondary-color);
 }
 
 
@@ -820,7 +821,7 @@ bottom: 29px;
 
 
 div#LinkList1 ul{
-	font-size: 15px;
+	font-size: 13px;
 }
 
 
