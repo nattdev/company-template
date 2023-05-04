@@ -1,0 +1,1002 @@
+/****************Custom CSS*****************/
+
+:root {
+/*--main-bg-color: #08254F;*/
+--main-bg-color: rgb(8 37 79);
+--secondary-color: rgb(16 74 156);
+--x-large: 60px;
+--large: 36px;
+--medium: 24px;
+--small: 17px;
+--x-small: 15px;
+}
+
+.active {
+	display: initial!important;
+}
+
+.post-outer-container.single-item h3 {
+max-width: none;
+}
+
+
+.widget.Text {
+position: relative;
+}
+
+#Text5 h3, #Text7 h3, #Text2 h3, #Text11 h3, div#ContactForm1 h3, .post-outer-container.single-item h3, div#additem_section .Text:first-child h3 {
+	padding: 70px 0;
+	font-size: var(--x-large);
+    text-align: center;
+	color: var(--main-bg-color)!important;
+	line-height: 1em;
+	margin: 0;
+	position: relative;
+}
+
+/** Add under-line text **/
+/*
+#Text5 h3::after, #Text7 h3::after, #Text2 h3::after, #Text11 h3::after, div#ContactForm1 h3::after, .post-outer-container.single-item h3::after, div#additem_section .Text:first-child h3::after {
+    content: "";
+    width: 220px;
+    height: 5px;
+    background: var(--secondary-color);
+    position: absolute;
+    bottom: 44px;
+    right: calc(50% - 110px);
+}*/
+
+.post-title a{
+	background-image: linear-gradient(var(--secondary-color),#aaa);
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3s;
+}
+
+.post:hover > h3 a, .post:hover > div.snippet-post{
+	background-size: 100% 2px;
+	color: var(--secondary-color);
+}
+
+/********PAG-SECTION************/
+
+.services-container {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 30px;
+	flex-basis: 350px;
+}
+
+
+/********MARGIN-TOP!=HomePage************/
+	.margin-top {
+	margin-top: 0;
+	z-index: 100;
+    background: var(--main-bg-color);
+    height: 61px;
+    width: 100%;
+	} 
+
+
+/********HEADER************/
+#header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display:flex;
+	position: fixed;
+	justify-content: space-between;
+	z-index: 999;
+	transition: 0.5s;
+}
+
+div#Header1 {
+margin-left: 156px;
+padding: 10px 0 10px 0px;
+text-align: center;
+}
+
+div#LinkList1 {
+margin-right: 156px;
+}
+
+div#Header1 img {
+    max-width: 250px;
+    height: 38px;
+}
+
+
+div#LinkList1 h3 {
+	display:none;
+}
+
+#LinkList1 .widget-content {
+	width: 100%;
+}
+
+
+div#LinkList1 ul{
+	display: flex!important;
+	list-style:none;
+}
+
+div#LinkList1 ul li{
+	padding: 5px;
+	margin: 0 10px;
+	min-width: fit-content;
+}
+
+
+div#LinkList1 ul a {
+    color: #fff;
+	padding-bottom: 4px;
+}
+
+div#LinkList1 ul a:hover {
+	border-bottom: 2px solid #fff;
+}
+
+div#HTML2 {
+	display: none;
+}
+
+
+/***PRESENTATION-SECTION***/
+
+div#presentation_section {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.33%, rgba(16, 74, 156, 0.6) 51.74%), url(https://www.hsimagazine.com/wp-content/uploads/2020/01/iStock-1028568006.jpg);
+    position: relative;
+    height: 660px;
+    background-size: cover;
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+div#Text1{
+	display: flex;
+    color: #fff;
+    flex-direction: column;
+    text-align: center;
+	padding: 0px 13px;
+}
+
+div#Text1 div{
+    max-width: 785px;
+	font-size: var(--small);
+	font-weight: normal;
+}
+
+
+div#LinkList2 {
+	background: #FFFDF6;
+	margin-bottom: 150px;
+	margin-top: 25px;
+	font-size: var(--x-small);
+}
+
+
+div#LinkList2 h3 {
+	display:none;
+}
+
+div#LinkList2 ul{
+	list-style:none;
+	padding: 0;
+    margin: 0;
+}
+
+div#LinkList2 li {
+	padding: 11px 26px;
+	transition: 0.2s;
+}
+
+
+div#LinkList2 li:hover{
+	background: var(--main-bg-color);
+	
+}
+
+div#LinkList2 li:hover > a{
+	color: #fff;
+
+}
+
+div#LinkList2 ul a{
+    color: var(--main-bg-color);
+	font-weight: bold;
+	padding: 11px 10px;
+}
+
+
+div#Text1 h3{
+    color: #fff;
+	font-size: var(--large); /*Change*/
+}
+
+
+/***SERVICES - ADD ITEM***/
+
+div#services_section, div#additem_section {
+    display: flex;
+    flex-wrap: wrap;
+   /* background: azure; */
+   /*  margin: 0 156px;  */
+    position: relative;
+	justify-content: center;
+}
+
+div#services_section .Text, div#additem_section .Text {
+    background: var(--main-bg-color);
+    width: 242px;
+    height: 262px;
+    text-align: center;
+    display: flex;
+	justify-content: center;
+    flex-direction: column;
+	padding: 0px 65px;
+	color: #fff;
+	transition: 0.5s;
+	flex-grow: 1;
+	line-height: 23px;
+}
+
+div#services_section .Text:hover, div#additem_section .Text:hover{
+    opacity: 0.9;
+}
+
+div#services_section .Text h3, div#additem_section .Text h3 {
+   	color: inherit;
+	display: block;
+    font-size: var(--medium);
+    font-weight: bold;
+	margin: 0 0 20px 0;
+}
+
+div#services_section .Text div, div#additem_section .Text div {
+	text-align: left;
+	min-width: 138px;
+	font-size: var(--x-small);
+}
+
+
+div#services_section div.Text:nth-child(2), div#additem_section div.Text:nth-child(3){
+    background: var(--secondary-color);
+}
+
+div#services_section div.Text:last-child, div#additem_section div.Text:last-child {
+    background: #F4F5F9;
+	color: var(--secondary-color);
+}
+
+/***INFO-SECTION***/
+
+div#info_section{
+	background: #fff;
+	position: relative;
+	padding-bottom: 72px;
+}
+
+div#info_section .widget-content{
+	background: #f4f5f9;
+	padding: 62px 72px;
+	margin: auto;
+	max-width: 980px;
+	line-height: 40px;
+	font-size: var(--medium);
+	position: relative;
+	z-index: 100;
+}
+
+div#info_section::before{
+	content:"";
+	width: 100%;
+	height: 288px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.33%, rgba(16, 74, 156, 0.6) 51.74%), url(https://www.hsimagazine.com/wp-content/uploads/2020/01/iStock-1028568006.jpg);
+	position: absolute;
+	bottom: 0;
+
+}
+
+/***TESTIMONIALS-SECTION***/
+
+
+div#testimonials_section {
+    display: flex;
+	align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background: #fff;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+/*** ADD ITEM ***/
+
+div#additem_section{
+	flex-wrap: wrap-reverse;
+
+}
+
+div#additem_section .Text:first-child {
+	order: 1;
+}
+
+
+div#testimonials_section .Text, div#additem_section .Text:first-child {
+	width: 100%;
+	text-align: center;
+	background: none;
+	max-height: 168px;
+}
+
+/**END**/
+
+div#testimonials_section .Image {
+    width: 378px;
+    height: 600px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+	position: relative;
+    background: #F4F5F9;
+ 	justify-content: space-between;
+    padding-bottom: 36px;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin: 20px 0;
+}
+
+div#testimonials_section .widget-content {
+    font-size: 17px;  /*Change*/
+	text-align: center;
+}
+
+div#testimonials_section .Image h3{
+    margin: 0;
+}
+
+div#testimonials_section .widget-content img {
+	width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+div#testimonials_section .widget-content span{
+	display: block;
+	padding: 32px 58px;
+}
+
+/***ADD ITEM-SECTION***/
+
+
+div#additem_section {
+	flex-direction: row-reverse;
+}
+
+/***PAGE-BODY***/
+
+div#page_body {
+    position: relative;
+	background: #fff;
+	/*padding-bottom: 20px;*/
+}
+
+div#page_body .blog-posts.hfeed.container {
+    display: flex;
+	justify-content: space-evenly;
+    /*margin-top: 20px;*/
+	flex-wrap: wrap;
+}
+
+div#page_body .blog-posts.hfeed.container article.post-outer-container.single-item-index, div#page_body .blog-posts.hfeed.container article.post-outer-container{
+	margin:0 10px;
+	flex-basis: 300px;
+	margin-bottom: 3px;
+	flex-grow: 0.5; 
+	max-width: 330px;
+	border-bottom: 7px solid #f4f5f9;
+}
+
+
+div#page_body .blog-posts.hfeed.container article.post-outer-container.single-item {
+    margin-top: 30px!important;
+    flex-basis: calc(100%)!important;
+	max-width: none;
+}
+
+
+div#page_body .post {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+}
+
+div#page_body .post div.entry-content:first-child{
+	margin-left: auto;
+	margin-right: auto;
+    width: 100%;
+    height: 150px;
+	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDAIGdR1RjXo3bzRMqOTZak59QDXNBjVj1ig&usqp=CAU) center;
+	background-size: cover;
+	margin: 0;
+    margin-bottom: 10px;
+}
+
+.post-body .snippet-thumbnail{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.post-body .snippet-thumbnail img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+}
+
+.post-bottom{
+	display: none;
+}
+
+#blog-pager a:hover{
+	background: var(--main-bg-color);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.snippet-fade:after, .snippet-fade{
+    display: none;
+}
+
+
+/***FORM-SECTION***/
+
+div#form_section::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 288px;
+    background: linear-gradient(0deg, rgba(8, 37, 79, 0.97), rgba(8, 37, 79, 1)), url(https://www.hsimagazine.com/wp-content/uploads/2020/01/iStock-1028568006.jpg) center;
+}
+
+div#form_section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+div#form_section #ContactForm1{
+	position: relative;
+	z-index: 100;
+	background: #fff;
+	max-width: 913px;
+	margin: 42px 10px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+div#form_section #ContactForm1 form {
+    display: grid;
+    grid-template-rows: 35px 128px 30px;
+    grid-template-columns: repeat(2, minmax(170px, 400px));
+    grid-gap: 15px 5px;
+    justify-content: center;
+	padding: 0 30px;
+}
+
+div#form_section #ContactForm1 form textarea, div#form_section #ContactForm1 form input#ContactForm1_contact-form-submit, div#form_section #ContactForm1 form div {
+	grid-column: 1/3;
+	resize: none;
+}
+
+div#form_section #ContactForm1 form div{
+	width: 100%;
+    color: #fff;
+    font-size: 13px;
+	height: 23px;
+}
+
+div#form_section #ContactForm1 form div p.contact-form-error-message-with-border{
+	background: #e74c3c;
+    padding: 8px;
+}
+
+
+.contact-form-name, .contact-form-email, .contact-form-email-message {
+    background: #f4f5f9;
+    box-sizing: border-box;
+	color: #7f7f7f;
+	padding-left: 8px;
+	border: none;
+}
+
+.contact-form-name, .contact-form-email{
+	height: 38px;
+}
+
+
+.contact-form-name::placeholder, .contact-form-email::placeholder, .contact-form-email-message::placeholder {
+	color: #7f7f7f;
+}
+
+.contact-form-button-submit {
+    background: var(--secondary-color);
+    border: none;
+    box-sizing: border-box;
+	font-weight: bold;
+	padding:10px;
+	height: 43px;
+	cursor: pointer;
+	transition: 0.2s;
+	padding: 11px;
+	color: #fff;
+}
+
+.contact-form-button-submit:hover {
+	background: var(--main-bg-color);
+	color: #fff;
+	border: 1px solid #fffa;	
+}
+
+div#form_section .Text {
+	display: flex;
+	align-items: center;
+}
+
+
+div#form_section .Text h3{
+	display: none;
+}
+
+div#form_section .Text div{
+	font-size: var(--medium);
+	padding: 15px;
+}
+
+
+.contact-form-success-message-with-border {
+	color: #fff;
+	background: var(--secondary-color);
+}
+
+#form_section svg {
+	fill: var(--secondary-color);
+}
+
+
+/***FOOTER_LIST***/
+#footer_list {
+	background: var(--main-bg-color);
+	display: flex;
+	justify-content: center;
+	padding: 35px 0;
+}
+
+#footer_list div#LinkList3, #footer_list div#LinkList3 h3 {
+	color: #fff;
+	text-align: center;
+}
+
+#footer_list div#LinkList3 a{
+	font-weight: normal;
+	color: #fff;
+}
+
+#footer_list div#LinkList3 a:hover{
+	color: #fff;
+	border-bottom: 1px solid #fff2;
+}
+
+#footer_list div#LinkList3 div ul {
+    padding: 0;
+    line-height: 1.4em;
+}
+
+/***FOOTER***/
+
+#footer {
+	background: var(--main-bg-color);
+}
+
+#footer div#Attribution1::before{
+	content: "";
+	width: 80%;
+	height: 1px;
+	background: #ffffff38;
+	position: absolute;
+	left: 10%;
+}
+
+#footer div#Attribution1{
+	width: 100%;
+}
+
+
+#footer .blogger{
+	display: none;
+}
+
+#footer .copyright{
+	margin: 0 0 25px 0;
+	color: #ffffff;
+	/*font-size: .85em!important;*/
+}
+
+
+/** FOOTER-INFO **/
+
+div#page_list_bottom {
+    display: flex;
+    background: var(--main-bg-color);
+    align-items: center;
+	width: 100%;
+	z-index: 999;
+	justify-content: center;
+} 
+
+div#TextList1 h3 {
+	display: none;
+}
+
+nav .Image h3{
+	display:none;
+}
+
+div#Image8 div, 
+div#Image7 div, 
+div#Image6 div {
+    display: flex;
+	align-items: center;
+	color:#fff;
+    font-size: 14px; /*Change*/
+	padding: 11px;
+}
+
+img#Image8_img,
+img#Image7_img, 
+img#Image6_img {
+    margin-right: 5px;
+}
+
+div#Image6 {
+    margin-right: 156px;
+}
+
+div#Image8 {
+	margin-left: auto;
+}
+
+div#Image1, div#Image2, div#Image4, div#Image3, div#Image5 {
+    transform: scale(0.4);
+    margin: -10px;
+}
+
+div#Image1 {
+    margin-left: 156px;
+}
+
+
+/***MEDIA-QUERIS***/
+
+@media screen and (max-width:1270px){
+
+	.margin-top {
+	margin-top: 60px;
+	z-index: 100;
+    background: var(--main-bg-color);
+    height: 0px;
+	} 
+
+
+	/****FOOTER-INFO****/
+
+	div#Image1{
+		margin-left: 50px;
+	}
+
+	div#Image6, div#Image7 {
+		margin-right: 50px;
+		margin-left: auto;
+	}
+
+	div#Image8 {
+		display: none;
+	}
+
+	/****HEADER****/
+
+	#header{
+		flex-direction: column;
+	}
+
+	div#Header1{
+		margin-left: 0;
+	  padding: 14px 12px 10px 12px;
+    text-align: initial;
+	}
+
+	div#LinkList1{
+    display: none;
+		margin-right: 0;
+	}
+
+	div#LinkList1 ul{
+		flex-direction: row;
+   		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 5px 0;
+		margin:0;
+		/*background: var(--main-bg-color);*/
+	
+	}
+
+	div#HTML2 {
+		display: block;
+		position: absolute;
+		top: 4px;
+		right: 30px;
+		padding: 10px 0px;
+	}
+
+	div#LinkList1 ul li{
+		padding: 2px 0;
+		margin: 5px;
+		width: 20%;
+		text-align: center;
+		transition: 0.3s;
+		border: 2px solid #ffffff22;
+		border-top: 0;
+		flex-grow: 1;
+		border-bottom: 0;
+	}
+
+	div#LinkList1 ul li:hover{
+		/*background: var(--secondary-color);*/
+	}
+
+@media screen and (max-width:1240px){ 
+
+/***TOP-INFO***/
+
+	div#page_list_top {
+		height: 32px;
+	}
+
+
+/***SERVICES***/
+
+	div#services_section .Image{
+		width: 200px;
+	}
+
+
+/***INFO-SECTION***/
+
+	div#info_section .widget-content{
+		margin: 10px;
+		max-width: none;
+
+	}
+
+/***TEAM-SECTION***/
+div#testimonials_section .Image{
+	margin: 20px 10px;
+}
+
+@media screen and (max-width:875px){
+
+
+/***PROYECTS-SECTION***/
+
+	div#proyects_section {
+		    flex-wrap: wrap;
+	}
+
+	div#proyects_section .Image {
+			width: 100%;
+			height: 300px;
+	}
+
+}
+
+
+@media screen and (max-width:748px){
+
+:root {
+--x-large: 48px;
+}
+
+#Text5 h3::after, #Text7 h3::after, #Text2 h3::after, #Text11 h3::after, div#ContactForm1 h3::after, .post-outer-container.single-item h3::after, div#additem_section .Text:first-child h3::after{
+bottom: 29px;
+}
+
+
+div#LinkList1 ul{
+	font-size: 13px;
+}
+
+
+/****HEADER****/
+
+	div#Image7 {
+		display:none;
+	}
+
+
+/***INFO-SECTION***/
+
+	div#info_section .widget-content{
+		padding: 30px 30px;
+		font-size: var(--small);
+
+	}
+
+/***TOP-INFO***/
+
+	div#page_list_top{
+		justify-content: center;
+		padding: 1px;
+	}
+
+	div#page_body .blog-posts.hfeed.container article.post-outer-container{
+		flex-basis: 480px;
+	}
+
+/***FOMR_SECTION***/
+
+#Text5 h3, #Text7 h3, #Text2 h3, #Text11 h3, div#ContactForm1 h3, .post-outer-container.single-item h3, div#additem_section .Text:first-child h3 { 
+	padding: 50px 0;
+}
+
+#Text7 h3 {
+	padding-top: 50px;
+}
+
+div#form_section .Text div{
+	font-size: 20px;
+
+}
+
+}
+
+@media screen and (max-width:487px){
+
+
+/***INFO-SECTION***/
+
+	div#info_section .widget-content img{
+		    height: auto;
+	}
+
+	div#info_section .widget-content span.caption {
+		min-width: auto;
+	}
+
+	
+/***PROYECTS-SECTION***/
+
+	div#proyects_section .Image h3{
+		font-size: 33px;
+		top:calc(50% - 45px);
+	}
+
+	div#proyects_section div.widget.Image{
+		height: 240px;
+		overflow: hidden;
+	}
+
+/****HEADER****/
+
+
+	div#Header1 img{
+		max-width: 178px;
+   		height: 30px;
+	}
+
+	div#HTML2{
+		right: 5px;
+	}
+
+	div#Image6{
+		display:none;
+	}
+
+	div#Image1{
+		margin-left: 0;
+	}
+
+/****PRESENTATION-SECTION****/
+
+	#Text1 h3.title {
+    	line-height: 1em;
+	}
+
+/****FORM-SECTION****/
+
+	div#form_section{
+		padding: 0px 13px 60px;
+	}
+
+	div#form_section h3{
+		font-size: 50px;
+	}
+
+	div#form_section #ContactForm1 form{
+		    grid-template-columns: repeat(1, minmax(211px, 400px));
+    		grid-template-rows: auto;
+    		grid-gap: 3px;
+	}
+
+	div#testimonials_section .widget-content::before{
+		width: 100px;
+    	height: 19px;
+		margin-left: -50px;
+	}
+
+	form > * {
+		margin: 5px;
+	}
+
+	.contact-form-name, .contact-form-email{
+		height: 42px;
+
+	}
+
+	div#page_body .blog-posts.hfeed.container article.post-outer-container{
+		flex-basis: auto;
+	}
+
+div#form_section #ContactForm1 form textarea, div#form_section #ContactForm1 form input#ContactForm1_contact-form-submit, div#form_section #ContactForm1 form div {
+	grid-column:auto;
+
+}
+
+	.Attribution .copyright, .Attribution .image-attribution {
+    font-size: .85em;
+
+
+}
+
+@media screen and (max-width:370px){
+	div#services_section .Text, div#additem_section .Text, div#info_section .widget-content, div#testimonials_section .widget-content span{
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+	
+	div#form_section h3{
+		font-size: 32px;
+	}
+
+
+	div#form_section #ContactForm1 form{
+		padding: 18px;
+	}
+
+	form > * {
+		margin: 0;
+		margin-bottom: 14px;
+	}
+
+	div#Image1 {
+		margin: -10px;
+	}
+
+	.post-title, .post-title a{
+		font-size:17px;
+		margin-top: 7px;
+	}
+}
