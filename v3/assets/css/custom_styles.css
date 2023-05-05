@@ -846,7 +846,7 @@ div#LinkList1 ul{
 	div#info_section .widget-content{
 		padding: 30px 30px;
 		font-size: var(--small);
-
+		line-height: 24px;
 	}
 
 /***TOP-INFO***/
