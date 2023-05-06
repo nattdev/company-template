@@ -182,6 +182,7 @@ div#LinkList2 {
 	background: #FFFDF6;
 	margin: 25px 13px 150px;
 	font-size: var(--x-small);
+	width: fit-content;
 }
 
 
