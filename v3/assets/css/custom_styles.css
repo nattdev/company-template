@@ -270,7 +270,7 @@ div#services_section .Text div, div#additem_section .Text div {
 }
 
 
-div#services_section div.Text:nth-child(2n){
+div#services_section div.Text:nth-child(2n), div#additem_section div.Text:nth-child(2n){
     background: var(--secondary-color);
 }
 
@@ -410,7 +410,7 @@ div#page_body .blog-posts.hfeed.container article.post-outer-container.single-it
 
 
 div#page_body .blog-posts.hfeed.container article.post-outer-container.single-item {
-    margin-top: 30px!important;
+    /*margin-top: 30px!important;*/
     flex-basis: calc(100%)!important;
 	max-width: none;
 }
