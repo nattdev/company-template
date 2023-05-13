@@ -2,9 +2,10 @@
 
 :root {
 /*--main-bg-color: #08254F;*/
+--main-bg-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtaRcKgk-mxWcW73Xo1NtAaamhCSS0S93r4AVPUlWGmMHKfgHi7zIz-cza7PFUS_UzpXUhreLoV2kzaASPTzwzgOOlSAoE1ej5NB0neEp8SKDpiOZ6eQyVtUbFn3koJ7xzrfITWCiA1SrJZUsZ0u9fl0_9aTQ72V14Wgc6lG8cjlk2Y3PCMd0Lsl30/s1280/back-tec.jpg) top;
 --main-bg-color: rgb(8 37 79);
 --secondary-color: rgb(16 74 156);
---x-large: 60px;
+--x-large: 50px;
 --large: 36px;
 --medium: 24px;
 --small: 17px;
@@ -152,9 +153,9 @@ div#HTML2 {
 /***PRESENTATION-SECTION***/
 
 div#presentation_section {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.33%, rgba(16, 74, 156, 0.6) 51.74%), url(https://www.hsimagazine.com/wp-content/uploads/2020/01/iStock-1028568006.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.33%, rgba(16, 74, 156, 0.6) 51.74%), var(--main-bg-image);
     position: relative;
-    height: 660px;
+    height: 100vh;
     background-size: cover;
 	display: flex;
     align-items: center;
@@ -249,6 +250,7 @@ div#services_section .Text, div#additem_section .Text {
 	transition: 0.5s;
 	flex-grow: 1;
 	line-height: 23px;
+	align-items: center;
 }
 
 div#services_section .Text:hover, div#additem_section .Text:hover{
@@ -350,20 +352,22 @@ div#testimonials_section .Image {
     align-items: center;
 	position: relative;
     background: #F4F5F9;
- 	justify-content: space-between;
+ 	justify-content: center;
     padding-bottom: 36px;
 	box-sizing: border-box;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	/*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+	border: 1px solid #e0e0e0;
 	margin: 20px 0;
 }
 
 div#testimonials_section .widget-content {
-    font-size: 17px;  /*Change*/
+    font-size: var(--small);  /*Change*/
 	text-align: center;
 }
 
 div#testimonials_section .Image h3{
-    margin: 0;
+	margin: auto;
+	padding: 0 20px;
 }
 
 div#testimonials_section .widget-content img {
@@ -402,9 +406,10 @@ div#page_body .blog-posts.hfeed.container {
 div#page_body .blog-posts.hfeed.container article.post-outer-container.single-item-index, div#page_body .blog-posts.hfeed.container article.post-outer-container{
 	margin:0 10px;
 	flex-basis: 300px;
-	margin-bottom: 3px;
+	margin-bottom: 20px;
 	flex-grow: 0.5; 
 	max-width: 330px;
+	border: 1px solid #e0e0e0;
 	border-bottom: 7px solid #f4f5f9;
 }
 
@@ -485,7 +490,8 @@ div#form_section #ContactForm1{
 	background: #fff;
 	max-width: 913px;
 	margin: 42px 10px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	/*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+	border: 1px solid #e0e0e0;
 }
 
 
@@ -555,10 +561,10 @@ div#form_section #ContactForm1 form div p.contact-form-error-message-with-border
 div#form_section .Text {
 	display: flex;
 	align-items: center;
-	background: #fff;
 	padding: 10px;
 	border-radius: 7px;
 	margin: 20px;
+	color: #ffffff;
 }
 
 
@@ -578,7 +584,7 @@ div#form_section .Text div{
 }
 
 #form_section svg {
-	fill: var(--secondary-color);
+	fill: #ffffff;
 }
 
 
@@ -763,16 +769,26 @@ div#Image1 {
 		width: 20%;
 		text-align: center;
 		transition: 0.3s;
-		border: 2px solid #ffffff22;
+		border: 2px solid #ffffff11;
 		border-top: 0;
 		flex-grow: 1;
-		border-bottom: 0;
 	}
 
 	div#LinkList1 ul li:hover{
 		/*background: var(--secondary-color);*/
 	}
 
+@media screen and (max-width:1232px){
+	div#form_section .Text {
+		color: #222222;
+	}
+	
+	#form_section svg {
+	fill: var(--secondary-color);
+	}
+}	
+	
+	
 @media screen and (max-width:1240px){ 
 
 /***TOP-INFO***/
@@ -822,7 +838,7 @@ div#testimonials_section .Image{
 @media screen and (max-width:748px){
 
 :root {
---x-large: 48px;
+--x-large: 40px;
 }
 
 #Text5 h3::after, #Text7 h3::after, #Text2 h3::after, #Text11 h3::after, div#ContactForm1 h3::after, .post-outer-container.single-item h3::after, div#additem_section .Text:first-child h3::after{
@@ -937,7 +953,7 @@ div#form_section .Text div{
 	}
 
 	div#form_section h3{
-		font-size: 50px;
+		font-size: var(--x-large);
 	}
 
 	div#form_section #ContactForm1 form{
