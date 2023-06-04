@@ -793,7 +793,11 @@ div#Image1 {
 	
 	
 @media screen and (max-width:1240px){ 
-
+	#header {
+		background: var(--main-bg-color);
+	}
+	
+	
 /***TOP-INFO***/
 
 	div#page_list_top {
