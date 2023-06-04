@@ -153,7 +153,7 @@ div#HTML2 {
 /***PRESENTATION-SECTION***/
 
 div#presentation_section {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.33%, rgba(16, 74, 156, 0.6) 51.74%), var(--main-bg-image);
+    background: linear-gradient(1deg, rgba(0, 0, 0, 0) 5%, rgb(16 74 156 / 86%) 95%), var(--main-bg-image);
     position: relative;
     height: 100vh;
     background-size: cover;
