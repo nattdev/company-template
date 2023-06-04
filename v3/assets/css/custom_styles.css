@@ -163,6 +163,9 @@ div#presentation_section {
     justify-content: flex-end;
 }
 
+div#presentation_section > div {
+    z-index: 1;
+}
 
 div#Text1{
 	display: flex;
