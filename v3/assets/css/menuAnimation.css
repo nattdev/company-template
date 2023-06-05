@@ -1,0 +1,23 @@
+#LinkList1.active ul {
+  flex-direction: column;
+  height: calc(100vh - 66px);
+  font-size: xx-large;
+  background: var(--main-bg-color);
+}
+
+
+#LinkList1.active ul li {
+  width: 100%;
+}
+
+@keyframes transition {
+0% { position: relative; right: calc(-100vw);}
+  
+100% {position: relative; right: 0px;}
+}
+
+.active {
+  display: initial !important;
+  animation-name: transition;
+  animation-duration: 1.5s;
+}
