@@ -1027,4 +1027,11 @@ div#form_section #ContactForm1 form textarea, div#form_section #ContactForm1 for
 		font-size:17px;
 		margin-top: 7px;
 	}
+	
+	div#form_section .Text {
+  		padding: 0px;
+  		margin: 20px 0;
+  		flex-direction: column;
+	}
+	
 }
