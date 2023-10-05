@@ -5,15 +5,13 @@
   background: var(--main-bg-color);
 }
 
-
 #LinkList1.active ul li {
   width: 100%;
 }
 
 @keyframes transition {
-0% { position: relative; right: calc(-100vw);}
-  
-100% {position: relative; right: 0px;}
+0% { position: relative; transform: translateX(100vw); }  
+100% { position: relative; transform: translateX(0); }
 }
 
 .active {
