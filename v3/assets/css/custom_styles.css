@@ -3,8 +3,8 @@
 :root {
 	/*--main-bg-color: #08254F;*/
 	--main-bg-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtaRcKgk-mxWcW73Xo1NtAaamhCSS0S93r4AVPUlWGmMHKfgHi7zIz-cza7PFUS_UzpXUhreLoV2kzaASPTzwzgOOlSAoE1ej5NB0neEp8SKDpiOZ6eQyVtUbFn3koJ7xzrfITWCiA1SrJZUsZ0u9fl0_9aTQ72V14Wgc6lG8cjlk2Y3PCMd0Lsl30/s1280/back-tec.jpg) top;
-	--main-bg-color: rgb(8 37 79);
-	--secondary-color: rgb(16 74 156);
+	--main-bg-color: 8, 37, 79;
+	--secondary-bg-color: 16, 74, 156;
 	--x-large: 50px;
 	--large: 36px;
 	--medium: 24px;
@@ -33,14 +33,14 @@ div#additem_section .Text:first-child h3 {
 	padding: 70px 0;
 	font-size: var(--x-large);
 	text-align: center;
-	color: var(--main-bg-color) !important;
+	color: rgb(var(--main-bg-color)) !important;
 	line-height: 1em;
 	margin: 0;
 	position: relative;
 }
 
 .post-outer-container.single-item h1 {
-	color: var(--main-bg-color) !important;
+	color: rgb(var(--main-bg-color)) !important;
 	text-align: center;
 }
 
@@ -50,14 +50,14 @@ div#additem_section .Text:first-child h3 {
     content: "";
     width: 220px;
     height: 5px;
-    background: var(--secondary-color);
+    background: var(--secondary-bg-color);
     position: absolute;
     bottom: 44px;
     right: calc(50% - 110px);
 }*/
 
 .post-title a {
-	background-image: linear-gradient(var(--secondary-color), #aaa);
+	background-image: linear-gradient(rgb(var(--secondary-bg-color)), #aaa);
 	background-position: 0 100%;
 	background-repeat: no-repeat;
 	background-size: 0% 2px;
@@ -67,7 +67,7 @@ div#additem_section .Text:first-child h3 {
 .post:hover>h2 a,
 .post:hover>div.snippet-post {
 	background-size: 100% 2px;
-	color: var(--secondary-color);
+	color: rgb(var(--secondary-bg-color));
 }
 
 /********PAG-SECTION************/
@@ -90,7 +90,7 @@ div#additem_section .Text:first-child h3 {
 .margin-top {
 	margin-top: 0;
 	z-index: 100;
-	background: var(--main-bg-color);
+	background: rgb(var(--main-bg-color));
 	height: 61px;
 	width: 100%;
 }
@@ -106,6 +106,7 @@ div#additem_section .Text:first-child h3 {
 	z-index: 999;
 	transition: 0.5s;
 	align-items: initial;
+	backdrop-filter: blur(5px);
 }
 
 div#Header1 {
@@ -212,7 +213,7 @@ div#LinkList2 li {
 }
 
 div#LinkList2 li:hover {
-	background: var(--main-bg-color);
+	background: rgb(var(--secondary-bg-color));
 }
 
 div#LinkList2 li:hover>a {
@@ -220,7 +221,7 @@ div#LinkList2 li:hover>a {
 }
 
 div#LinkList2 ul a {
-	color: var(--main-bg-color);
+	color: rgb(var(--main-bg-color));
 	font-weight: bold;
 	padding: 11px 10px;
 }
@@ -245,7 +246,7 @@ div#additem_section {
 
 div#services_section .Text,
 div#additem_section .Text {
-	background: var(--main-bg-color);
+	background: rgb(var(--main-bg-color));
 	width: 242px;
 	height: 262px;
 	text-align: center;
@@ -283,13 +284,13 @@ div#additem_section .Text div {
 
 div#services_section div.Text:nth-child(2n),
 div#additem_section div.Text:nth-child(2n) {
-	background: var(--secondary-color);
+	background: rgb(var(--secondary-bg-color));
 }
 
 div#services_section div.Text:last-child,
 div#additem_section div.Text:last-child {
 	background: #f4f5f9;
-	color: var(--secondary-color);
+	color: rgb(var(--secondary-bg-color));
 }
 
 /***INFO-SECTION***/
@@ -467,7 +468,7 @@ div#page_body .post div.entry-content:first-child {
 }
 
 #blog-pager a:hover {
-	background: var(--main-bg-color);
+	background: rgb(var(--main-bg-color));
 	color: #fff;
 	border: 1px solid #fff;
 }
@@ -559,7 +560,7 @@ div#form_section #ContactForm1 form div p.contact-form-error-message-with-border
 }
 
 .contact-form-button-submit {
-	background: var(--secondary-color);
+	background: rgb(var(--secondary-bg-color));
 	border: none;
 	box-sizing: border-box;
 	font-weight: bold;
@@ -572,7 +573,7 @@ div#form_section #ContactForm1 form div p.contact-form-error-message-with-border
 }
 
 .contact-form-button-submit:hover {
-	background: var(--main-bg-color);
+	background: rgb(var(--main-bg-color));
 	color: #fff;
 	border: 1px solid #fffa;
 }
@@ -597,7 +598,7 @@ div#form_section .Text div {
 
 .contact-form-success-message-with-border {
 	color: #fff;
-	background: var(--secondary-color);
+	background: rgb(var(--secondary-bg-color));
 }
 
 #form_section svg {
@@ -606,7 +607,7 @@ div#form_section .Text div {
 
 /***FOOTER_LIST***/
 #footer_list {
-	background: var(--main-bg-color);
+	background: rgb(var(--main-bg-color));
 	display: flex;
 	justify-content: center;
 	padding: 35px 0;
@@ -636,7 +637,7 @@ div#form_section .Text div {
 /***FOOTER***/
 
 #footer {
-	background: var(--main-bg-color);
+	background: rgb(var(--main-bg-color));
 }
 
 #footer div#Attribution1::before {
@@ -666,7 +667,7 @@ div#form_section .Text div {
 
 div#page_list_bottom {
 	display: flex;
-	background: var(--main-bg-color);
+	background: rgb(var(--main-bg-color));
 	align-items: center;
 	width: 100%;
 	z-index: 999;
@@ -689,7 +690,6 @@ div#Image6 div {
 	color: #fff;
 	font-size: 14px;
 	/*Change*/
-	padding: 11px;
 }
 
 img#Image8_img,
@@ -725,7 +725,7 @@ div#Image1 {
 	.margin-top {
 		margin-top: 60px;
 		z-index: 100;
-		background: var(--main-bg-color);
+		background: rgb(var(--main-bg-color));
 		height: 0px;
 	}
 
@@ -738,7 +738,6 @@ div#Image1 {
 	div#Image6,
 	div#Image7 {
 		margin-right: 50px;
-		margin-left: auto;
 	}
 
 	div#Image8 {
@@ -760,6 +759,7 @@ div#Image1 {
 	div#LinkList1 {
 		display: none;
 		margin-right: 0;
+		height: 100vh;
 	}
 
 	div#LinkList1 ul {
@@ -782,17 +782,16 @@ div#Image1 {
 
 	div#LinkList1 ul li {
 		padding: 2px 0;
-		margin: 5px;
-		width: 20%;
+		margin: 5px 0;
 		text-align: center;
 		transition: 0.3s;
-		border: 2px solid #ffffff11;
-		border-top: 0;
+		border: 1px solid #ffffff11;
 		flex-grow: 1;
+		box-sizing: border-box;
 	}
 
 	div#LinkList1 ul li:hover {
-		/*background: var(--secondary-color);*/
+		/*background: var(--secondary-bg-color);*/
 	}
 }
 
@@ -802,13 +801,13 @@ div#Image1 {
 	}
 
 	#form_section svg {
-		fill: var(--secondary-color);
+		fill: rgb(var(--secondary-bg-color));
 	}
 }
 
 @media screen and (max-width: 1240px) {
 	#header {
-		background: var(--main-bg-color);
+		background: rgb(var(--main-bg-color), 0.50);
 	}
 
 	/***TOP-INFO***/
