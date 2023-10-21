@@ -25,7 +25,7 @@ max-width: none;
 position: relative;
 }
 
-#Text5 h3, #Text7 h3, #Text2 h3, #Text11 h3, div#ContactForm1 h3, .post-outer-container.single-item h1, div#additem_section .Text:first-child h3 {
+#Text5 h3, #Text7 h3, #Text2 h3, #Text11 h3, div#ContactForm1 h3, div#additem_section .Text:first-child h3 {
 	padding: 70px 0;
 	font-size: var(--x-large);
     text-align: center;
@@ -33,6 +33,11 @@ position: relative;
 	line-height: 1em;
 	margin: 0;
 	position: relative;
+}
+
+.post-outer-container.single-item h1 {
+	color: var(--main-bg-color)!important;
+	text-align: center;
 }
 
 /** Add under-line text **/
