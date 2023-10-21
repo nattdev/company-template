@@ -1,8 +1,8 @@
 #LinkList1.active ul {
   flex-direction: column;
-  height: calc(95vh - 66px);
-  font-size: 25px;
-  background: var(--main-bg-color);
+  height: calc(63vh - 66px);
+  font-size: 22px;
+  /*background: var(--main-bg-color);*/
 }
 
 #LinkList1.active ul li {
