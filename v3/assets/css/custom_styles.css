@@ -287,6 +287,10 @@ div#additem_section div.Text:nth-child(2n) {
 	background: rgb(var(--secondary-bg-color));
 }
 
+div#services_section div.Text:nth-child(3n) {
+	background: #142338;
+}
+
 div#services_section div.Text:last-child,
 div#additem_section div.Text:last-child {
 	background: #f4f5f9;
